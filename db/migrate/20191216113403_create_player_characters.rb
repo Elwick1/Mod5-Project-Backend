@@ -8,6 +8,7 @@ class CreatePlayerCharacters < ActiveRecord::Migration[6.0]
       t.integer :health
       t.integer :magic
       t.string :image_url
+      t.integer :start_Page
 
       t.timestamps
     end

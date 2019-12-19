@@ -6,6 +6,9 @@ class CreatePages < ActiveRecord::Migration[6.0]
       t.string :first_option
       t.string :second_option
       t.string :image_url
+      t.integer :path_id
+      t.boolean :monster
+      t.integer :monster_health
       
 
       t.timestamps

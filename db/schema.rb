@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 2019_12_16_113533) do
     t.string "first_option"
     t.string "second_option"
     t.string "image_url"
+    t.integer "path_id"
+    t.boolean "monster"
+    t.integer "monster_health"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -31,6 +34,7 @@ ActiveRecord::Schema.define(version: 2019_12_16_113533) do
     t.integer "health"
     t.integer "magic"
     t.string "image_url"
+    t.integer "start_Page"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
