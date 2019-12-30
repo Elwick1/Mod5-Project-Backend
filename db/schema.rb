@@ -17,12 +17,14 @@ ActiveRecord::Schema.define(version: 2019_12_16_113533) do
 
   create_table "pages", force: :cascade do |t|
     t.text "content"
-    t.string "first_option"
-    t.string "second_option"
     t.string "image_url"
     t.integer "path_id"
     t.boolean "monster"
     t.integer "monster_health"
+    t.boolean "trap"
+    t.integer "trap_save"
+    t.string "first_option"
+    t.string "second_option"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
