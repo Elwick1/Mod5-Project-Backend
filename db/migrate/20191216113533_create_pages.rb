@@ -11,7 +11,10 @@ class CreatePages < ActiveRecord::Migration[6.0]
       t.integer :trap_save
       t.string :first_option
       t.string :second_option
-      
+      t.boolean :can_die
+      t.integer :death_id
+      t.text :death_message
+      t.string :death_image
 
       t.timestamps
     end

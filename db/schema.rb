@@ -25,6 +25,10 @@ ActiveRecord::Schema.define(version: 2019_12_16_113533) do
     t.integer "trap_save"
     t.string "first_option"
     t.string "second_option"
+    t.boolean "can_die"
+    t.integer "death_id"
+    t.text "death_message"
+    t.string "death_image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
