@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 PlayerCharacter.destroy_all
 Page.destroy_all
  
@@ -21,21 +14,21 @@ start_Page: 1)
 pc6 = PlayerCharacter.create(name: "Derrin", job: "Mage", race: "Elf", health: 12, magic: 16, image_url: "https://i.pinimg.com/474x/5e/ae/4e/5eae4e0e4e58cd36129090b18e9843bd.jpg",
 start_Page: 2)
 
-page1 = Page.create(content: "Welcome Condemned One! I am the Curator. You may very well be wondering where in the world you are? hmm? 
+page1 = Page.create(content: "Welcome Condemned One! I am the Overseer. You may very well be wondering where in the world you are? hmm? 
 I am here to clear that, amongst a few other things, up for you. You Have Been Sentenced and Exiled to the Broken Realm..", 
 image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
 path_id: 1, monster: false, monster_health: 0, trap: false, trap_save: 0,
  first_option: "The Broken Realm???", second_option: "", can_die: false, death_id: 0, death_message: "", 
  death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg")
 
-page2 = Page.create(content: "Welcome Condemned One! I am the Curator. You may very well be wondering where in the world you are? hmm? 
+page2 = Page.create(content: "Welcome Condemned One! I am the Overseer. You may very well be wondering where in the world you are? hmm? 
 I am here to clear that, amongst a few other things, up for you. You Have Been Sentenced and Exiled to the Broken Realm..", 
 image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
 path_id: 2, monster: false, monster_health: 0, trap: false, trap_save: 0,
  first_option: "The Broken Realm???", second_option: "", can_die: false, death_id:0, death_message: "",
  death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 
-page3 = Page.create(content: "Yes The Broken Realm! Created by the mad god, Brizengurzt, it is a place that only those
+page3 = Page.create(content: "Yes The Broken Realm! Created by the mad god, Brizengurt, it is a place that only those
 who commit dark and terrible crimes are sent to.. which makes me wonder why you're here? Being the one who welcomes
  the newly condemned, i happen to know ALL about YOU my new friend! Which means that i am aware,
  That YOU should not be here...", image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg",
@@ -43,7 +36,7 @@ who commit dark and terrible crimes are sent to.. which makes me wonder why you'
  first_option: "Then why am I here?", second_option: "", can_die: false, death_id:0, death_message: "",
  death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
  
-page4 = Page.create(content: "Yes The Broken Realm! Created by the mad god, Brizengurzt, it is a place that only those
+page4 = Page.create(content: "Yes The Broken Realm! Created by the mad god, Brizengurt, it is a place that only those
 who commit dark and terrible crimes are sent to.. which makes me wonder why you're here? Being the one who welcomes
  the newly condemned, i happen to know ALL about YOU my new friend! Which means that i am aware,
  That YOU should not be here...", image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
@@ -54,7 +47,7 @@ who commit dark and terrible crimes are sent to.. which makes me wonder why you'
 page5 = Page.create(content: "I Have no clue! That is for you to find out, not for me to tell you. Now the way this usually
 works is i pick a rather terrible place to send you and you attempt to live out the rest of your miserable existence. However
 due to the unusual situation you find yourself in, i'm going to send you somewhere slightly safer. I'll also tell you that
-there is a way out of this place, YOU just need to,  it...", 
+there is a way out of this place, YOU just need to find it...", 
 image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
 path_id: 1, monster: false, monster_health: 0, trap: false, trap_save: 0, 
 first_option: "Get Teleported Away!", second_option: "", can_die: false, death_id:0, death_message: "",
@@ -63,25 +56,25 @@ death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbae
 page6 = Page.create(content: "I Have no clue! That is for you to find out, not for me to tell you. Now the way this usually
 works is i pick a rather terrible place to send you and you attempt to live out the rest of your miserable existence. However
 due to the unusual situation you find yourself in, i'm going to send you somewhere slightly safer. I'll also tell you that
-there is a way out of this place, YOU just need to, figure it out...", 
+there is a way out of this place, YOU just need to find it...", 
 image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
 path_id: 2, monster: false, monster_health: 0, trap: false, trap_save: 0, 
 first_option: "Get Teleported Away!", second_option: "", can_die: false, death_id:0, death_message: "",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 
-page7 = Page.create(content: "You open your eyes to a beautiful sight, a lush green forest of tall, thin trees. 
-The sunlight breaking through the top layer of the forest in beams, illuminating parts of the ground. 
- Strange flowers and bushes cover the forest floor, you listen and hear 
+page7 = Page.create(content: "You open your eyes to a beautiful sight, a lush green forest of tall, thin trees - many of them 
+covered or surrounded by large exotic flowers - The sunlight breaking through the top layer of the forest in beams,
+ illuminating parts of the ground. Bushes and various vegetation cover the forest floor, you hear 
  the sounds of animals all around you. The forest is very much alive.", 
  image_url: "https://i.pinimg.com/474x/d7/00/cd/d700cdbe25a42047c87d0d670305ff45.jpg",
  path_id: 1, monster: false, monster_health: 0,
  trap: false, trap_save: 0, first_option: "Travel further into the forest", second_option: "Examine and smell the flowers",
- can_die: true, death_id: 1, death_message: "You Smell the flowers, as you breathe deeply your lungs begin to sear with pain
-  as if it were flames that you inhaled, clutching at your throat you fall to the floor, your whole body spasms and the world grows dark around you.
+ can_die: true, death_id: 1, death_message: "You Smell the flowers and as you breathe deeply your lungs begin to sear with pain,
+  clutching at your throat you fall to the floor, lungs on fire, your whole body spasms and the world grows dark around you.
  Your adventure ends here.", death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 
 page8 = Page.create(content: "The cold hits you first, The air sending shivers down your spine. As you open your eyes
-you find yourself standing on the high peak of a snow covered mountain, The sun glares in your face. Unforgiving. Like the wind that
+you find yourself standing on the high peak of a snow covered mountain, The sun glares in your face. Unforgiving, Much Like the wind that
 blows all around you, the very breath of the mountain trying to remove you from it. 
 ", image_url: "https://i.pinimg.com/474x/15/75/38/157538c576f06eb9542cb6b97982e6f4.jpg",
  path_id: 2, monster: false, monster_health: 0,
@@ -90,20 +83,23 @@ blows all around you, the very breath of the mountain trying to remove you from 
  # snowtop
 
 page9 = Page.create(content: "Travelling deeper into the forest, you realise the sunlight is slowly fading, the floor covered with twisting roots 
-becomes harder to navigate without stumbling. You find yourself moving at a slower pace, deeper into the darker parts of the Forest. Afer a short while
-A voice calls out from above, 'youu theerree, Loossst oneee'...", 
+becomes harder to navigate without stumbling. You find yourself moving at a slower pace, into the darker parts of the Forest. Afer a short while
+A voice calls out from above, 'Youu theerree, Loossst oneee!'...", 
 image_url: "https://i.pinimg.com/474x/99/4f/d8/994fd822202dcf9937889a859f1ed327.jpg", 
 path_id: 1, monster: false, monster_health: 0,
-trap: false, trap_save: 0, first_option: "Look up", second_option: "Run", can_die: true, death_id: 0, 
-death_message: "Startled by the sudden noise, you break into a run. You get 10ft from where your stood before something slams into your back,
+trap: false, trap_save: 0, first_option: "Look up, find the source of the voice", second_option: "Ignore the voice and run", can_die: true, death_id: 0, 
+death_message: "Startled by the sudden noise, you break into a run. You get 10ft from where you stood before something slams into your back,
 bringing you to the floor, Wooden hands grab you by the head and begin to twist. You will never know what creature the hands belong to as
 it quickly snaps your neck. Your adventure ends here.", death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg")
 
 page10 = Page.create(content: "You decide there is only one way to keep warm, you must keep moving. Not that much futher into the mountain 
-range, you hear a noise, a rustling of dry branches and the crunches snow..", 
+range, you hear a noise, a rustling of dry branches and the crunches of snow..", 
 image_url: "https://i.pinimg.com/474x/4f/81/e4/4f81e404005a5aa9a55e2201d8ed3b45.jpg",
  path_id: 2, monster: false, monster_health: 0,
-trap: false, trap_save: 0, first_option: "Attempt to hide", second_option: "", can_die: true, death_id:0, death_message: "",
+trap: false, trap_save: 0, first_option: "Attempt to hide", second_option: "Turn back the other way",
+ can_die: true, death_id:0, death_message: "As you turn and take a step, a blinding pain erupts from your shoulder as several arrows pierce your flesh,
+ you stumble forwards, trying to get to cover. but it is too late, another arrow hits you. You no longer feel your legs, you cannot move.
+ Your adventure ends here.",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 # snowtop - all is peaceful
 
@@ -137,10 +133,11 @@ image_url: "https://i.pinimg.com/474x/02/30/42/02304225d9cfb52438fa701452ae0e00.
 trap: false, trap_save: 0, first_option: "Continue", second_option: "",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 
-page14 = Page.create(content: "The orc's proved no match for you, bruised, bleeding and weary, you wipe the blood from your face
- and continue onwards into the unknown.", image_url: "https://i.pinimg.com/474x/4f/81/e4/4f81e404005a5aa9a55e2201d8ed3b45.jpg",
+page14 = Page.create(content: "The orcs proved no match for you, bruised, bleeding and weary, you wipe the blood from your face
+ and continue onwards into the unknown. Hoping to find a way to escape this frozen hellscape.",
+  image_url: "https://i.pinimg.com/474x/4f/81/e4/4f81e404005a5aa9a55e2201d8ed3b45.jpg",
  path_id: 2, monster: false, monster_health: 0,
-trap: false, trap_save: 0, first_option: "", second_option: "",
+trap: false, trap_save: 0, first_option: "Continue onwards, wary of danger", second_option: "",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 # snowtop - all is peaceful pt2
 
@@ -149,7 +146,7 @@ Branches reach out in all directions, the floor covered in rotting vegitation th
 constantly threatening you with a broken ankle if you do not move slowly. as you continue you begin to hear sounds, you make it out to be laughter
   followed by a crunching of some kind..", image_url: "https://i.pinimg.com/474x/ed/f2/34/edf234021a36b1c32d8f481a081f57ec.jpg", 
 path_id: 1, monster: false, monster_health: 0,
-trap: false, trap_save: 0, first_option: "Investigate", second_option: "",
+trap: false, trap_save: 0, first_option: "Investigate the sounds", second_option: "",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 
 page20 = Page.create(content: "Traveling deeper into the snow, the sky grows dark and the wind much fiercer, it becomes much harder to make
@@ -160,7 +157,7 @@ more of these icy sentinals.
 They haven't noticed your presence, you doubt they ever will from they way they move and carry theirselves along in the storm.",
  image_url: "https://i.pinimg.com/474x/9a/d1/35/9ad1354dd03b89a0d72f30d1b502d5ee.jpg",
  path_id: 2, monster: false, monster_health: 0,
-trap: false, trap_save: 0, first_option: "", second_option: "",
+trap: false, trap_save: 0, first_option: "Try your luck, see if you can pass unnoticed", second_option: "",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 # snowtop - armored giants - sneak no encounter 
 
@@ -173,7 +170,7 @@ trap: false, trap_save: 0, first_option: "Fight", second_option: "Run Away",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" ) 
 # - need death page
 
-page22 = Page.create(content: "Not much after your haunting encounter with the giants, the path you travel on turns and twists.
+page22 = Page.create(content: "You Pass without an issue. Not much after your haunting encounter with the giants, the path you travel on turns and twists.
  The storm still raging, you take a step forwards, your foot touching empty air, almost loosing your footing but saving yourself
   at the last minute you see now that the path you're walking upon has become a twisted icy death bridge. in the distance you make out one
   lone creature that looks simmilar to the giants you had previously seen. Perhaps this is where they set off from?", image_url: "https://i.pinimg.com/474x/51/18/7e/51187ec00764b7ff37b61d3dcf0f6c93.jpg",
@@ -183,11 +180,15 @@ death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbae
 # snowtop - long windy path
 
 page23 = Page.create(content: "Despite the creatures size, you make swift work of it at the same time deciding that nothing in this place is safe
-and that you must continue, find out where you are and how to leave. Futher still on your travel, the trees slowly become less prominent, giving
- way to incredibly large mushrooms, rising up to 12/13 feet tall and surrounding you on all sides. You make out what appears to be a path,
- stone steps through the center of the impossibly big mushrooms", image_url: "https://i.pinimg.com/474x/d4/2d/65/d42d65e9b21736e753db054a000177ed.jpg",
+and that you must continue. Futher still on your travel, the trees slowly become less prominent, giving
+ way to incredibly large mushrooms, some rising up to 12/13 feet tall, you have never seen anything alike. It looks magical. 
+ You make out what appears to be a path, stone steps leading into the unknown. You could continue onwards, however you have not rested 
+ since you arrived in this forsaken place and you do not know what dangers may lie ahead", image_url: "https://i.pinimg.com/474x/d4/2d/65/d42d65e9b21736e753db054a000177ed.jpg",
  path_id: 1, monster: false, monster_health: 0,
-trap: false, trap_save: 0, first_option: "Follow the path", second_option: "look at the mushrooms",
+trap: false, trap_save: 0, first_option: "Follow the path", second_option: "Find somewhere to rest", can_die: true, death_id:0, 
+death_message: "You found a place to rest, and decide to look for somthing to fill your empty stomach. You stumbled across a patch of smaller 
+mushrooms, simillar to ones that grew in your hometown, thinking they're the safest option, you ate one. bum bum buuuum, not 20 minutes later,
+your muscules sieze up and you cannot go anywhere. At least it is a beautiful place. Your adventure ends here. ",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" ) 
 # - need death page 
 
@@ -200,20 +201,20 @@ page24 = Page.create(content: "Succesfully you managed to cross the bridge and c
 trap: false, trap_save: 0, first_option: "Stand in awe for a few minutes before continuing onwards", second_option: "" )
 # snowtop - giant skeleton - dead in background
 
-page25 = Page.create(content: "Following the steps, moving through what had become a mushroom forest, you begin the hear the sound of running water.
- Running to the source of the noise, your surrounding drastically change, mushrooms and trees give way to a flowing river. All thoughts of safety
+page25 = Page.create(content: "Following the steps, moving through what had become a mushroom forest, you begin the hear the sound of water.
+ Running to the source of the noise, your surroundings drastically change, mushrooms and trees give way to a flowing river. All thoughts of safety
  escape you as you fling yourself to the riverbank and begin to drink, the water is cold and satisfying but clear, you see yourself reflected
- back on the waters surface, you focus but notice somthing, a shadow approaching, growing larger and larger.", image_url: "https://i.pinimg.com/474x/0d/42/65/0d4265f7f56d5c034d25c44b79ba9d53.jpg",
+ back on the waters surface, you focus but notice something, a shadow approaching, growing larger and larger.", image_url: "https://i.pinimg.com/474x/0d/42/65/0d4265f7f56d5c034d25c44b79ba9d53.jpg",
  path_id: 1, monster: false, monster_health: 0,
-trap: false, trap_save: 0, first_option: "Turn and run", second_option: "Dive into the water" ) 
+trap: false, trap_save: 0, first_option: "Turn and face the danger", second_option: "" ) 
 # - death page needed
 
 page26 = Page.create(content: "The storm now completely dissapated, you realise that this strange, snowy tundra is really quiet beautiful, 
 However as you've come to discover - Danger is everywhere - whilst you admire the views of the mountain, A long Howl and a beating of wings 
 fills the air, you turn to see upon the ruins of a broken tower, A beast that you cannot quite name, part wolf part bird. It howls again,
- opens its wings and launches itself at you!", image_url: "https://i.pinimg.com/474x/01/50/c9/0150c9aa1bcc5e5bb4b9fc3d3588755c.jpg",
+ opens its wings and launches itself at you!", image_url: "https://i.pinimg.com/474x/ea/3b/c0/ea3bc0a6e0d9f522f27d98e9ee23b397.jpg",
  path_id: 2, monster: true, monster_health: 15,
-trap: false, trap_save: 0, first_option: "", second_option: "Attempt to Run" )
+trap: false, trap_save: 0, first_option: "Dodge the beast", second_option: "" )
 # snowtop - wolf bird monster
 
 page27 = Page.create(content: "As you turn your heart almost stops from shock, A monsterous three headed serpent is crawling towards you. 
