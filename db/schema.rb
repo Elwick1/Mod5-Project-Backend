@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2019_12_16_113533) do
     t.integer "magic"
     t.string "image_url"
     t.integer "start_Page"
+    t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

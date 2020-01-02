@@ -1,18 +1,48 @@
 PlayerCharacter.destroy_all
 Page.destroy_all
  
-pc1 = PlayerCharacter.create(name: "Ravajani", job: "Fighter", race: "Beastman", health: 17, magic: 0, image_url: "https://i.pinimg.com/474x/f9/be/35/f9be351076c504b837871447dae067a4.jpg",
-start_Page: 1)
+pc1 = PlayerCharacter.create(name: "Balasar", job: "Fighter", race: "Beastman", health: 17, magic: 0, image_url: "https://i.pinimg.com/474x/f9/be/35/f9be351076c504b837871447dae067a4.jpg",
+start_Page: 1, description: "Balasar, son of Uadjit and Sudeiman the first born to the throne of  Ubohiri.
+ The strongest, fastest and the most resilient of all the fighters. 
+ As most Beastmen (from the side of his mother) Balasar cherishes his clan and his people,
+  proving to be one of the most loyal and devoted to his beliefs and religion. 
+  He stands strong on the edge of the volcanic mountain guarding the heart of his kingdom. 
+  His self-sufficiency will never let him fail or at least that is what he says.")
+
 pc2 = PlayerCharacter.create(name: "Illiana", job: "Fighter", race: "Human", health: 16, magic: 0, image_url: "https://i.pinimg.com/474x/af/01/34/af0134bdad1414c3fe5452b337c6e526.jpg",
-start_Page: 2)
+start_Page: 2, description: "Illiana, an orphan from northwest part of Faerun, found and raised by creatures of the forest.
+ Never knowing her parents she always felt unsettled. Throughout her youth she grew to be a caring and loving 
+ young woman, with a huge heart and a lot of understanding. 
+ Her turbulent childhood made her a very wise and bright teenager. She knows a great deal about other races and 
+ their habits but is always looking for her own place in the world.
+  That deep need for knowing the truth of her origins started her life long quest for finding the answers.
+   Thanks to her ventures she became very self-sufficient but also a bit of an outsider,
+    which makes it hard for her to fit in or be understood. 
+    On one of her endeavours she stumbled a cross a red willow tree that held an elliptical ruby stone in its core, 
+    that became her life amulet gifting her with magic powers and a warriors stamina.")
+
 pc3 = PlayerCharacter.create(name: "Obann", job: "Rogue", race: "Half-orc", health: 15, magic: 0, image_url: "https://i.pinimg.com/474x/f3/42/7b/f3427bdff9be7d91a41ae16ade9287e1.jpg",
-start_Page: 1)
+start_Page: 1, description: "Obann, a half-orc outcast, born into a life of poverty. Obann started life as a petty criminal, travelling from town to town looking for things to steal and jobs to complete.
+He was eventually noticed by a local crimelord, who saw his untapped potential as something to mold and nurture. Obann now spends his days overseeing and completing large scale
+robberies and extortion for his boss. Wanted in many kingdoms, especially Ubohiri due to the theft of a royal treasure, He is hunted constantly
+He knows his time is running out, he must find a way to dissapear.")
+
 pc4 = PlayerCharacter.create(name: "Yashara", job: "Rogue", race: "Half-elf", health: 15, magic: 0, image_url: "https://i.pinimg.com/474x/f0/db/7a/f0db7a82d6efcae82b2706a07653a003.jpg",
-start_Page: 2)
-pc5 = PlayerCharacter.create(name: "Halas", job: "Mage", race: "Human", health: 11, magic: 15, image_url: "https://i.pinimg.com/474x/28/c7/78/28c7782fd42ca7b5f153c658b9327a18.jpg",
-start_Page: 1)
+start_Page: 2, description: "Yashara, Known as the Black Viper - a silent killer, assassin for hire - started her life in the underdark of Faerun.
+Born to religious family, she is a woman of faith. Praying to the SpiderQueen Lolith, for guidance she is gifted with an ability to phase into shadow.
+Yashara's early life spent in the underdark has given her superior darkvision making her a swift and silent killer, unrivalled in her craft.")
+
+pc5 = PlayerCharacter.create(name: "Halas", job: "Mage", race: "Gnome", health: 11, magic: 15, image_url: "https://i.pinimg.com/474x/83/6b/dd/836bdd50ec34a77015757cd6d5a863c2.jpg",
+start_Page: 1, description: "Halas, a Gnomish wizard - Famous for developing new fields of transmutation magic - began his life as a lowley farmhand.
+ However this life was not for him, more comfortable with his nose in books than working the fields, he quickly left his family for a life of Arcane study.
+ Determined to show his family that there is more to life than tending a farm, he will stop at no costs to achieve his goal of becoming an Arch-mage.
+ However, his brash nature has created many enemies for himself with in the arcane fields of study. Many would love for him to dissapear.")
+
 pc6 = PlayerCharacter.create(name: "Derrin", job: "Mage", race: "Elf", health: 12, magic: 16, image_url: "https://i.pinimg.com/474x/5e/ae/4e/5eae4e0e4e58cd36129090b18e9843bd.jpg",
-start_Page: 2)
+start_Page: 2, description: "Derrin of Aerenal, is a member of the Undying Court, a council of undead elves sustained by positive energy.
+An isolationist by nature, she has little interest in the world beyond her island believing the Five Nations to be a place of chaos and war.
+Derrin is highly adept in the field of Abjuration magic, crafting magic that blocks, banishes, or protects. Having studied for nearly 200 years in this field, 
+she has a wealth of knowledge and summoned by the council, she one day found herself sent upon a mission to gather information from the five nations.")
 
 page1 = Page.create(content: "Welcome Condemned One! I am the Overseer. You may very well be wondering where in the world you are? hmm? 
 I am here to clear that, amongst a few other things, up for you. You Have Been Sentenced and Exiled to the Broken Realm..", 
@@ -30,33 +60,33 @@ path_id: 2, monster: false, monster_health: 0, trap: false, trap_save: 0,
 
 page3 = Page.create(content: "Yes The Broken Realm! Created by the mad god, Brizengurt, it is a place that only those
 who commit dark and terrible crimes are sent to.. which makes me wonder why you're here? Being the one who welcomes
- the newly condemned, i happen to know ALL about YOU my new friend! Which means that i am aware,
- That YOU should not be here...", image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg",
+ the newly condemned, I happen to know ALL about YOU my new friend! Which means that I am also aware,
+ That you should not be here...", image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg",
  path_id: 1, monster: false, monster_health: 0, trap: false, trap_save: 0, 
  first_option: "Then why am I here?", second_option: "", can_die: false, death_id:0, death_message: "",
  death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
  
 page4 = Page.create(content: "Yes The Broken Realm! Created by the mad god, Brizengurt, it is a place that only those
 who commit dark and terrible crimes are sent to.. which makes me wonder why you're here? Being the one who welcomes
- the newly condemned, i happen to know ALL about YOU my new friend! Which means that i am aware,
- That YOU should not be here...", image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
+ the newly condemned, I happen to know ALL about YOU my new friend! Which means that I am also aware,
+ That you should not be here...", image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
  path_id: 2, monster: false, monster_health: 0, trap: false, trap_save: 0,
  first_option: "Then why am I here?", second_option: "", can_die: false, death_id:0, death_message: "",
  death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 
-page5 = Page.create(content: "I Have no clue! That is for you to find out, not for me to tell you. Now the way this usually
-works is i pick a rather terrible place to send you and you attempt to live out the rest of your miserable existence. However
+page5 = Page.create(content: "I Have no clue! That is for you to find out, some nefarious reason I am sure. Now the way this usually
+works is I pick a rather terrible place to send you and you attempt to live out the rest of your miserable existence. However
 due to the unusual situation you find yourself in, i'm going to send you somewhere slightly safer. I'll also tell you that
-there is a way out of this place, YOU just need to find it...", 
+there is a way out of this place, you just need to find it...", 
 image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
 path_id: 1, monster: false, monster_health: 0, trap: false, trap_save: 0, 
 first_option: "Get Teleported Away!", second_option: "", can_die: false, death_id:0, death_message: "",
 death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 
-page6 = Page.create(content: "I Have no clue! That is for you to find out, not for me to tell you. Now the way this usually
-works is i pick a rather terrible place to send you and you attempt to live out the rest of your miserable existence. However
+page6 = Page.create(content: "I Have no clue! That is for you to find out, some nefarious reason I am sure. Now the way this usually
+works is I pick a rather terrible place to send you and you attempt to live out the rest of your miserable existence. However
 due to the unusual situation you find yourself in, i'm going to send you somewhere slightly safer. I'll also tell you that
-there is a way out of this place, YOU just need to find it...", 
+there is a way out of this place, you just need to find it...", 
 image_url: "https://i.pinimg.com/564x/c3/65/76/c3657677821e98fb1681262d675d70ed.jpg", 
 path_id: 2, monster: false, monster_health: 0, trap: false, trap_save: 0, 
 first_option: "Get Teleported Away!", second_option: "", can_die: false, death_id:0, death_message: "",
@@ -78,7 +108,7 @@ you find yourself standing on the high peak of a snow covered mountain, The sun 
 blows all around you, the very breath of the mountain trying to remove you from it. 
 ", image_url: "https://i.pinimg.com/474x/15/75/38/157538c576f06eb9542cb6b97982e6f4.jpg",
  path_id: 2, monster: false, monster_health: 0,
- trap: false, trap_save: 0, first_option: "", second_option: "", can_die: false, death_id:0, death_message: "",
+ trap: false, trap_save: 0, first_option: "Explore and get out of the wind", second_option: "", can_die: false, death_id:0, death_message: "",
  death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
  # snowtop
 
@@ -143,7 +173,7 @@ death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbae
 
 page15 = Page.create(content: "The forest grows darker still, the trees more wild in their arrangement and growth. 
 Branches reach out in all directions, the floor covered in rotting vegitation that cleverly disguises the gnarled and twisted tree roots
-constantly threatening you with a broken ankle if you do not move slowly. as you continue you begin to hear sounds, you make it out to be laughter
+constantly threatening you with a broken ankle if you do not move slowly. As you continue you begin to hear sounds, you make it out to be laughter
   followed by a crunching of some kind..", image_url: "https://i.pinimg.com/474x/ed/f2/34/edf234021a36b1c32d8f481a081f57ec.jpg", 
 path_id: 1, monster: false, monster_health: 0,
 trap: false, trap_save: 0, first_option: "Investigate the sounds", second_option: "",
@@ -162,12 +192,16 @@ death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbae
 # snowtop - armored giants - sneak no encounter 
 
 page21 = Page.create(content: "Moving slowly along the forest floor, attempting to see what made the noises you had heard, the nearest tree to you moves
- in your surpirse you cry out, causing you to realise that These are not trees, but some form of hideous giant. The one that moves turns it's head
- and looks down at you, it's toothy maw opening widely, almost laughing at you, as you find yourself swiftly wishing that you had never been sent here", 
+ in your surpirse you cry out, causing you to realise that These are not trees, but some form of hideous giant. The one that moved turns it's head
+ and looks down at you, it's toothy maw opening widely, hanging from it's teeth, a human-looking leg. 
+ You find yourself swiftly wishing that you had never been sent here as you brace yourself for an attack", 
  image_url: "https://i.pinimg.com/474x/d7/95/9f/d7959fc5935047f63ff803e3ac2c7913.jpg",
  path_id: 1, monster: true, monster_health: 16,
 trap: false, trap_save: 0, first_option: "Fight", second_option: "Run Away",
-death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" ) 
+death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg", 
+death_message: "Tired from your previous fight, you move too slowly, the creature - much quicker than something of it's size should be - 
+grabs you in one hand, looks at you and proceeds to smash your body against the forest floor. you fall unconsious after the second impact.
+Your adventure ends here.") 
 # - need death page
 
 page22 = Page.create(content: "You Pass without an issue. Not much after your haunting encounter with the giants, the path you travel on turns and twists.
@@ -214,14 +248,20 @@ However as you've come to discover - Danger is everywhere - whilst you admire th
 fills the air, you turn to see upon the ruins of a broken tower, A beast that you cannot quite name, part wolf part bird. It howls again,
  opens its wings and launches itself at you!", image_url: "https://i.pinimg.com/474x/ea/3b/c0/ea3bc0a6e0d9f522f27d98e9ee23b397.jpg",
  path_id: 2, monster: true, monster_health: 15,
-trap: false, trap_save: 0, first_option: "Dodge the beast", second_option: "" )
+trap: false, trap_save: 0, first_option: "Dodge the beast", second_option: "", death_message: "You rolled to the left as the creature leaps over you,
+avoiding it on it's first attack. It's lets out a mighty howl and comes at you again, you attempt another roll but the creature anticipates your movement,
+slamming a huge clawed paw into your chest, it pins you to the ground. the last thing you see is the creatures teeth as it rips open your neck.
+Your adventure ends here.", death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" )
 # snowtop - wolf bird monster
 
 page27 = Page.create(content: "As you turn your heart almost stops from shock, A monsterous three headed serpent is crawling towards you. 
 Cursing yourself for getting distracted by the water and letting your gaurd down, you get into a defensive position readying yourself for the creatures
 attack.", image_url: "https://i.pinimg.com/474x/97/b5/61/97b561163a7eaf1070cf713233676e45.jpg",
  path_id: 1, monster: true, monster_health: 17,
-trap: false, trap_save: 0, first_option: "Stand and fight", second_option: "Decide to flee instead" ) 
+trap: false, trap_save: 0, first_option: "Stand and fight", second_option: "Decide to flee instead", death_message: "Despite the creature's size,
+it had managed to position itself behind you perfectly, each of it's heads snaping jaws wildly. One extends towards you and spits a strange greenish
+liquid at you, you cover your eyes but know instantly that it is too late, The creature had spat acid at you. Your whole body begins to burn away,
+flesh disintergrating before you. Your adventure ends here.", death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg" ) 
 # - death scene needed 
 
 page28 = Page.create(content: "At the last moment You ducked under the creature as it lept and dealt a swift, killing blow, it's
@@ -236,14 +276,20 @@ page30 = Page.create(content: "How you survived is beyond you, The serpent moved
  it's attempts to devour you. But once again you proved yourself no easy meal, you head back to the river to wash the creatures blood from yourself
   as you finish up, one of the heads begins to twitch slightly..", image_url: "https://i.pinimg.com/474x/69/d7/69/69d7694fc6bad5f62035aa19724ee349.jpg",
  path_id: 1, monster: false, monster_health: 0,
-trap: false, trap_save: 0, first_option: "ignore the twitch and keep moving", second_option: "check the head" )
+trap: false, trap_save: 0, first_option: "ignore the twitch and keep moving", second_option: "check the head", death_message: "Your curiousity gets the better of you
+you go towards the head that twitches slightly, ready to make sure that it is dead. As you approach a gurgling sound comes from the head,
+You take another step closer as all of a sudden, a strange greenish liquid shoots from the heads open mouth, hitting you in the chest. The liquid burns
+your flesh slowly melting away. Your adventure ends here.", death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg")
 
 page31 = Page.create(content: "'You will go no futher!' A booming voice calls out, Snow soars into the air as two giant chains fall from
-  the grip of two massive, iron gauntlets. 'the Condemned have no business here, turn back, Learn to fear the mountain.' An
-  immensely large, armor plated head turns down to look at you. 'I shall give you no other warnings..'",
+  the grip of a pair of massive, iron gauntlets. 'the Condemned have no business here, turn back, Learn to fear the mountain.' An
+  immensely large, armor plated head turns down to look at you. 'I am the Sentinel of the mountain gate and I shall give you no other warnings..'",
  image_url: "https://i.pinimg.com/474x/7e/8f/35/7e8f3585bbe62c5f0de76c1384645812.jpg",
  path_id: 2, monster: true, monster_health: 17,
-trap: false, trap_save: 0, first_option: "", second_option: "" ) 
+trap: false, trap_save: 0, first_option: "", second_option: "Try to reason with the figure", death_message: "You proved no match for the Sentinel, Giant chains spun so fast
+they appeared as deadly blurs before you, within 30 seconds of the fight, your body is left broken. The last thing you see is the sentinel picking you up,
+saying 'I told you little one, no one passes.' before throwing you from the side of the mountain. you pass out before your body hits the ground. 
+Your adventure ends here.", death_image: "https://i.pinimg.com/474x/9d/76/9b/9d769bc4c8ea84ae918c82458b3fbaee.jpg") 
 # snowtop - final boss
 
 page32 = Page.create(content: "Following the path of the river, you eventually come across a stone stairway, at the top of which 
